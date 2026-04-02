@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veille Health Tech — Hellocare | Semaine du 30 mars 2026</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #2d3748;
+      line-height: 1.6;
+    }
+    .wrapper {
+      max-width: 720px;
+      margin: 32px auto;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+      padding: 36px 40px 28px;
+      color: #ffffff;
+    }
+    .header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+    .header p.subtitle {
+      margin-top: 6px;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+    /* BODY */
+    .body { padding: 32px 40px; }
+    /* EDITO */
+    .edito {
+      background: #e8f0fe;
+      border-left: 4px solid #1a73e8;
+      border-radius: 6px;
+      padding: 18px 20px;
+      margin-bottom: 32px;
+    }
+    .edito h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #1a73e8;
+      margin-bottom: 8px;
+    }
+    .edito p {
+      font-size: 14.5px;
+      color: #3a4a6b;
+    }
+    /* SECTION */
+    .section { margin-bottom: 36px; }
+    .section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1a237e;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e3eaf8;
+      margin-bottom: 16px;
+    }
+    /* ITEM */
+    .item {
+      background: #f7faff;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      border: 1px solid #dce8fc;
+    }
+    .item-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    .badge {
+      font-size: 13px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      line-height: 1.4;
+    }
+    .item-title {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #1a237e;
+    }
+    .item p {
+      font-size: 13.5px;
+      color: #4a5568;
+      margin-top: 2px;
+    }
+    .item .source {
+      font-size: 11.5px;
+      color: #7a8aa0;
+      margin-top: 6px;
+    }
+    .item .source a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .item .source a:hover { text-decoration: underline; }
+    /* SIGNAL */
+    .signal {
+      background: linear-gradient(135deg, #fff8e1 0%, #fffde7 100%);
+      border: 2px solid #f9a825;
+      border-radius: 10px;
+      padding: 22px 24px;
+      margin-bottom: 36px;
+    }
+    .signal h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #e65100;
+      margin-bottom: 10px;
+    }
+    .signal h3 {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #bf360c;
+      margin-bottom: 8px;
+    }
+    .signal p {
+      font-size: 13.5px;
+      color: #4e342e;
+      line-height: 1.65;
+    }
+    /* SOURCES */
+    .sources-section {
+      background: #f7faff;
+      border-top: 1px solid #e3eaf8;
+      padding: 24px 40px;
+    }
+    .sources-section h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #7a8aa0;
+      margin-bottom: 12px;
+    }
+    .sources-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sources-section ul li {
+      font-size: 12px;
+      color: #7a8aa0;
+      margin-bottom: 5px;
+    }
+    .sources-section ul li a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .sources-section ul li a:hover { text-decoration: underline; }
+    /* FOOTER */
+    .footer {
+      background: #1a237e;
+      color: #aab5cc;
+      font-size: 11.5px;
+      text-align: center;
+      padding: 14px 40px;
+    }
+    .empty-note {
+      font-size: 13px;
+      color: #8a9ab5;
+      font-style: italic;
+      padding: 6px 0;
+    }
+    .tag-critique { color: #c62828; }
+    .tag-important { color: #e65100; }
+    .tag-surveiller { color: #f9a825; }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>🏥 Veille Health Tech — Hellocare</h1>
+    <p class="subtitle">Synthèse hebdomadaire du <strong>30 mars</strong> au <strong>2 avril 2026</strong></p>
+  </div>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- ÉDITO -->
+    <div class="edito">
+      <h2>📋 TLDR — Les faits marquants de la semaine</h2>
+      <p>
+        Cette semaine a été marquée par une actualité dense sur plusieurs fronts stratégiques.
+        La <strong>feuille de route télémédecine 2026-2028</strong> continue de structurer le marché avec des assouplissements ciblés du quota des 20&nbsp;%.
+        Côté concurrents, <strong>Doctolib</strong> est sous double pression&nbsp;: une condamnation à 4,6&nbsp;M€ pour pratiques anticoncurrentielles (en appel) et une offensive IA clinique avec un laboratoire dédié doté de 20&nbsp;M€.
+        La <strong>CNIL et la HAS</strong> ont formalisé leur partenariat pour encadrer l'IA en santé, signal fort d'un durcissement réglementaire à venir.
+        Enfin, la <strong>santé mentale</strong>, renouvelée Grande Cause Nationale 2026, tire la croissance des téléconsultations et représente une fenêtre d'opportunité directe pour Hellocare.
+      </p>
+    </div>
+
+    <!-- RUBRIQUE 1 : CONCURRENTS -->
+    <div class="section">
+      <h2>🏢 Concurrents &amp; Acteurs</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-critique">🔴 Critique</span>
+          <span class="item-title">Doctolib condamné à 4,6&nbsp;M€ pour abus de position dominante — fait appel</span>
+        </div>
+        <p>
+          L'Autorité de la concurrence a infligé une amende de 4,665&nbsp;millions d'euros à Doctolib pour deux pratiques anticoncurrentielles&nbsp;: des clauses d'exclusivité imposées aux professionnels de santé jusqu'en septembre 2023, et le rachat prédateur de son principal concurrent MonDocteur en 2018. Doctolib a annoncé faire immédiatement appel. Cette décision crée un précédent important&nbsp;: elle fragilise l'image de "partenaire de confiance" que Doctolib cultive auprès des médecins et ouvre une fenêtre de repositionnement pour des acteurs alternatifs comme Hellocare.
+        </p>
+        <p class="source">Sources&nbsp;: <a href="https://www.acuite.fr/actualite/profession/323076/doctolib-sanctionne-47-meu-damende-pour-abus-de-position-dominante-et" target="_blank">Acuité</a> · <a href="https://www.usine-digitale.fr/editorial/pourquoi-doctolib-vient-d-etre-condamne-a-payer-4-6-millions-d-euros-pour-pratiques-anticoncurrentielles-en-france.N2240967" target="_blank">Usine Digitale</a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-critique">🔴 Critique</span>
+          <span class="item-title">Doctolib lance un laboratoire d'IA clinique avec 20&nbsp;M€ d'investissement</span>
+        </div>
+        <p>
+          Annoncé en février 2026, le laboratoire d'intelligence artificielle de Doctolib associe l'INSERM, l'INRIA, le CHU de Nantes, le DFKI allemand et plusieurs sociétés savantes. L'objectif&nbsp;: développer des outils d'aide à la décision pour les médecins et un assistant patient sécurisé. 100 ingénieurs sont déjà exclusivement dédiés à l'IA au sein des 900 R&amp;D. Cette montée en puissance IA positionne Doctolib comme concurrent direct sur le segment de la consultation augmentée, un axe que Hellocare doit anticiper.
+        </p>
+        <p class="source">Sources&nbsp;: <a href="https://www.maddyness.com/2026/02/24/doctolib-lance-son-laboratoire-dia-avec-une-enveloppe-de-20-millions-deuros/" target="_blank">Maddyness</a> · <a href="https://www.caducee.net/actualite-medicale/16814/doctolib-accelere-dans-l-ia-clinique-avec-un-laboratoire-dedie.html" target="_blank">Caducee.net</a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-surveiller">🟡 À surveiller</span>
+          <span class="item-title">Doctolib déployé au CH de Bagnères-de-Bigorre dès le 1er avril 2026</span>
+        </div>
+        <p>
+          Le Centre Hospitalier de Bagnères-de-Bigorre active la plateforme Doctolib pour la prise de rendez-vous en ligne, messagerie sécurisée et préadmission dématérialisée. Doctolib continue de consolider sa présence dans les établissements publics, s'ancrant dans les parcours de soins territoriaux — un axe de différenciation à surveiller pour les acteurs de la téléconsultation.
+        </p>
+        <p class="source">Source&nbsp;: <a href="https://www.lasemainedespyrenees.fr/bagneres-de-bigorre-le-centre-hospitalier-passe-a-doctolib-pour-faciliter-lacces-aux-soins/" target="_blank">La Semaine des Pyrénées</a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-surveiller">🟡 À surveiller</span>
+          <span class="item-title">Plateformes de téléconsultation&nbsp;: stabilité du paysage concurrentiel</span>
+        </div>
+        <p>
+          Qare, Livi, Maiia et Medadom n'ont pas enregistré d'annonce majeure cette semaine. Medadom maintient son avance sur le segment des cabines connectées (plus de 5&nbsp;500 bornes), tandis que Livi reste actif sur le recrutement de médecins salariés. La bataille se joue désormais sur l'IA et l'intégration dans les parcours de soins.
+        </p>
+        <p class="source">Source&nbsp;: <a href="https://info.medadom.com/blog/comparatif-plateformes-teleconsultation" target="_blank">Medadom Blog</a></p>
+      </div>
+    </div>
+
+    <!-- RUBRIQUE 2 : MARCHÉ & RÉGULATION -->
+    <div class="section">
+      <h2>⚖️ Marché &amp; Régulation</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-critique">🔴 Critique</span>
+          <span class="item-title">Feuille de route télémédecine 2026-2028&nbsp;: les mesures clés en vigueur</span>
+        </div>
+        <p>
+          Présentée le 26 janvier 2026 par la ministre Stéphanie Rist, la feuille de route nationale s'articule autour de quatre axes&nbsp;: montée en compétences des professionnels, intégration dans les parcours de soins chroniques, ciblage prioritaire des populations sans médecin traitant ou en zone sous-dotée, et renforcement du cadre qualité (déclarations obligatoires, encadrement du matériel). Mesure phare&nbsp;: des <strong>dérogations ciblées au plafond de 20&nbsp;% de téléconsultations</strong> pour les médecins retraités, remplaçants et lors des tensions saisonnières. Une opportunité d'augmentation de volume pour les plateformes agréées.
+        </p>
+        <p class="source">Sources&nbsp;: <a href="https://www.caducee.net/actualite-medicale/16777/assises-de-la-telemedecine-la-feuille-de-route-2026-2028-de-stephanie-rist-entre-relance-et-garde-fous.html" target="_blank">Caducee.net</a> · <a href="https://sante.gouv.fr/soins-et-maladies/prises-en-charge-specialisees/telesante-pour-l-acces-de-tous-a-des-soins-a-distance/article/assises-de-la-telemedecine-2025-2026-un-nouvel-elan-pour-les-acteurs" target="_blank">Ministère de la Santé</a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-important">🟠 Important</span>
+          <span class="item-title">CNIL–HAS&nbsp;: partenariat pour encadrer l'IA en santé signé le 10 mars 2026</span>
+        </div>
+        <p>
+          La CNIL et la Haute Autorité de Santé ont formalisé une convention de partenariat visant à renforcer les bonnes pratiques en matière de protection des données personnelles et de promotion des droits fondamentaux dans les outils numériques de santé. Une <strong>recommandation commune sur l'usage de l'IA en contexte de soins est attendue au 2e trimestre 2026</strong>. Ce document va définir le cadre légal applicable pour tout acteur développant des fonctionnalités IA — Hellocare doit anticiper dès maintenant ses exigences de conformité.
+        </p>
+        <p class="source">Sources&nbsp;: <a href="https://www.cnil.fr/fr/numerique-en-sante-la-cnil-et-la-has-sengagent" target="_blank">CNIL.fr</a> · <a href="https://www.generation-nt.com/actualites/cnil-has-sante-numerique-donnees-personnelles-ia-2072941" target="_blank">Generation-NT</a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-important">🟠 Important</span>
+          <span class="item-title">Doctrine du numérique en santé 2026 publiée — interopérabilité et EEDS au cœur</span>
+        </div>
+        <p>
+          L'Agence du Numérique en Santé (ANS) a publié la nouvelle version de la doctrine du numérique en santé 2026. Elle précise les orientations liées à l'<strong>Espace Européen des Données de Santé (EEDS)</strong>, les futurs référentiels d'interopérabilité et de sécurité, et l'impact des régulations européennes en matière de cybersécurité. Le Ségur Numérique, dont le 14e comité de suivi est prévu le 15 avril, reste le vecteur principal des déploiements.
+        </p>
+        <p class="source">Sources&nbsp;: <a href="https://esante.gouv.fr/actualites/publication-de-la-doctrine-du-numerique-en-sante-2026" target="_blank">ANS / esante.gouv.fr</a> · <a href="https://www.ordre.pharmacien.fr/les-communications/focus-sur/les-actualites/publication-de-la-doctrine-du-numerique-en-sante-2026" target="_blank">Ordre Pharmaciens</a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-important">🟠 Important</span>
+          <span class="item-title">Santé mentale reconduite Grande Cause Nationale 2026 — téléconsultation en première ligne</span>
+        </div>
+        <p>
+          Pour la deuxième année consécutive, le gouvernement prolonge la Grande Cause Nationale "Parlons santé mentale". En 2025, la santé mentale a <strong>tiré la croissance des téléconsultations</strong>&nbsp;: les plateformes de télépsychologie et de suivi psychologique ont enregistré les progressions les plus fortes. Le dispositif MonPsy devrait être assoupli, et les entreprises de plus de 1&nbsp;000 salariés ont l'obligation de déployer des plans de prévention des risques psychosociaux. Opportunité directe pour Hellocare d'élargir son offre santé mentale.
+        </p>
+        <p class="source">Sources&nbsp;: <a href="https://www.info.gouv.fr/communique/le-gouvernement-prolonge-en-2026-la-grande-cause-nationale-dediee-a-la-sante-mentale" target="_blank">info.gouv.fr</a> · <a href="https://www.caducee.net/actualite-medicale/16782/teleconsultation-2025-la-sante-mentale-tire-l-activite-l-etat-affine-la-feuille-de-route-2026-2028.html" target="_blank">Caducee.net</a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-surveiller">🟡 À surveiller</span>
+          <span class="item-title">Téléconsultation&nbsp;: le profil des utilisateurs bouscule les idées reçues</span>
+        </div>
+        <p>
+          Selon une étude publiée le 31 mars 2026, <strong>69&nbsp;% des utilisateurs de téléconsultation résident hors grandes agglomérations</strong> et 72&nbsp;% vivent hors Île-de-France. En 2024, 13,9 millions de téléconsultations ont été remboursées (+18,7&nbsp;%). Ces chiffres remettent en question le discours sur un usage urbain et jeune, et plaident pour un positionnement territorial fort des plateformes.
+        </p>
+        <p class="source">Sources&nbsp;: <a href="https://www.lassuranceenmouvement.com/2026/03/31/la-teleconsultation-seloigne-des-idees-recues" target="_blank">L'Assurance en Mouvement</a> · <a href="https://www.ameli.fr/medecin/actualites/pour-definir-les-contours-de-la-telemedecine-de-demain-des-assises-jusqu-en-janvier-2026" target="_blank">Ameli.fr</a></p>
+      </div>
+    </div>
+
+    <!-- RUBRIQUE 3 : INNOVATION & TECHNOLOGIE -->
+    <div class="section">
+      <h2>💡 Innovation &amp; Technologie</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-important">🟠 Important</span>
+          <span class="item-title">IA médicale 2026&nbsp;: les "Agents IA" passent au stade clinique opérationnel</span>
+        </div>
+        <p>
+          En 2026, les agents IA deviennent capables d'exécuter des tâches complètes&nbsp;: priorisation des symptômes, planification d'examens, analyse de résultats biologiques, coordination de traitements. La France a alloué <strong>753&nbsp;M€ à la stratégie d'accélération Santé Numérique France 2030</strong>, incluant formation, recherche et simplification réglementaire. Les plateformes de téléconsultation doivent intégrer cette dimension IA pour rester compétitives sur la qualité de prise en charge.
+        </p>
+        <p class="source">Sources&nbsp;: <a href="https://www.choisirunmedecin.com/blog/sante-2026-lia-au-service-des-patients-sans-remplacer-les-medecins/" target="_blank">ChoisirUnMedecin.com</a> · <a href="https://www.maddyness.com/2026/01/20/demain-un-hopital-intelligent-limpact-de-lia-sur-la-sante/" target="_blank">Maddyness</a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-surveiller">🟡 À surveiller</span>
+          <span class="item-title">Journée RGPD Santé CNIL&nbsp;: données de santé et IA sous les projecteurs (26 mars 2026)</span>
+        </div>
+        <p>
+          La CNIL a organisé le 26 mars 2026 une journée RGPD dédiée aux données de santé et à la recherche, en partenariat avec l'Université Paris-Saclay. L'événement a mis en lumière les enjeux croisés entre réglementation, sécurité et usage clinique de l'IA. Les acteurs de la télémédecine sont directement concernés par la consultation publique CNIL/HAS en cours sur le guide de bonnes pratiques IA en contexte de soins.
+        </p>
+        <p class="source">Source&nbsp;: <a href="https://www.cnil.fr/fr/journee-rgpd-sante-recherche-paris" target="_blank">CNIL.fr</a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-surveiller">🟡 À surveiller</span>
+          <span class="item-title">ANSM&nbsp;: déploiement des notices numériques médicaments avec QR code (depuis automne 2025)</span>
+        </div>
+        <p>
+          Dans le cadre d'un pilote lancé par l'ANSM, des boîtes de médicaments en pharmacie intègrent désormais un QR code donnant accès direct à la notice numérique. Ce mouvement vers la dématérialisation de l'information médicale crée des synergies avec les consultations à distance et pourrait enrichir les dossiers partagés au sein des plateformes de téléconsultation.
+        </p>
+        <p class="source">Source&nbsp;: <a href="https://ansm.sante.fr/" target="_blank">ANSM</a></p>
+      </div>
+    </div>
+
+    <!-- RUBRIQUE 4 : LEVÉES DE FONDS & M&A -->
+    <div class="section">
+      <h2>💰 Levées de Fonds &amp; M&amp;A</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-important">🟠 Important</span>
+          <span class="item-title">HealthTech France 2025&nbsp;: 2,3&nbsp;Md€ levés, le capital-risque en hausse de 15&nbsp;%</span>
+        </div>
+        <p>
+          Selon le Panorama France HealthTech 2026 (France Biotech / EY), les sociétés healthtech françaises ont levé <strong>2,3&nbsp;milliards d'euros en 2025</strong>, dont 1,0&nbsp;Md€ en venture capital (+15&nbsp;%) et 1,3&nbsp;Md€ sur les marchés boursiers. Tendances marquantes&nbsp;: l'IA est la thématique dominante (deux tiers des entreprises l'utilisent déjà), et le marché bifurque entre des "rounds souverains" de très grande taille et des acquisitions d'IP ciblées pour les scale-ups en difficulté de séries B+.
+        </p>
+        <p class="source">Sources&nbsp;: <a href="https://www.ey.com/fr_fr/newsroom/2026/02/panorama-france-healthtech-2026" target="_blank">EY France</a> · <a href="https://www.medtechfrance.fr/vie-de-la-profession/actualites/france-biotech-panorama-france-healthtech-2026-maturite-confirmee-mais-lecosysteme-entre-dans-une-phase-plus-exigeante/" target="_blank">MedTech France</a></p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="badge tag-surveiller">🟡 À surveiller</span>
+          <span class="item-title">Avril 2026&nbsp;: dynamisme des levées de fonds en France toutes filières (570&nbsp;M€)</span>
+        </div>
+        <p>
+          Le mois d'avril 2026 a vu 570&nbsp;M€ levés par les startups françaises toutes filières confondues, dans la continuité d'un mars 2026 record (1,77&nbsp;Md€). Le capital se concentre sur les projets à impact démontré, viabilité économique prouvée et maîtrise réglementaire. Les acteurs de la e-santé disposant d'agréments (comme l'agrément ministériel en téléconsultation) bénéficient d'un avantage compétitif significatif aux yeux des investisseurs.
+        </p>
+        <p class="source">Source&nbsp;: <a href="https://independant.io/top-levees-fonds-france-2026/" target="_blank">Independant.io</a> · <a href="https://www.rightliens.com/details-levees+de+fonds+en+sante+en+2026+conjoncture+france+international-549" target="_blank">RightLiens</a></p>
+      </div>
+    </div>
+
+  </div><!-- /.body -->
+
+  <!-- SIGNAL DE LA SEMAINE -->
+  <div style="padding: 0 40px 36px;">
+    <div class="signal">
+      <h2>⚡ Signal de la semaine</h2>
+      <h3>Doctolib sous pression&nbsp;: une fenêtre stratégique s'ouvre pour Hellocare</h3>
+      <p>
+        La condamnation de Doctolib à 4,6&nbsp;M€ d'amende pour pratiques anticoncurrentielles — combinée à son offensive IA à 20&nbsp;M€ — dessine un adversaire à double visage&nbsp;: fragilisé sur son modèle commercial historique, mais en train d'accélérer sur la valeur ajoutée clinique. Pour Hellocare, c'est un moment rare&nbsp;: les professionnels de santé mécontents des pratiques passées de Doctolib sont réceptifs à des alternatives. La feuille de route nationale 2026-2028, les assouplissements du quota des 20&nbsp;%, et la dynamique santé mentale (Grande Cause Nationale 2026) constituent un alignement favorable pour gagner des parts de marché. La priorité stratégique immédiate est de capitaliser sur la crédibilité réglementaire et d'accélérer sur l'intégration IA, avant que Doctolib ne referme la fenêtre avec ses outils cliniques.
+      </p>
+    </div>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="sources-section">
+    <h2>📎 Sources principales</h2>
+    <ul>
+      <li><a href="https://www.acuite.fr/actualite/profession/323076/doctolib-sanctionne-47-meu-damende-pour-abus-de-position-dominante-et" target="_blank">Acuité — Doctolib sanctionné à 4,7 M€ d'amende</a></li>
+      <li><a href="https://www.maddyness.com/2026/02/24/doctolib-lance-son-laboratoire-dia-avec-une-enveloppe-de-20-millions-deuros/" target="_blank">Maddyness — Doctolib lance son laboratoire d'IA (20 M€)</a></li>
+      <li><a href="https://www.caducee.net/actualite-medicale/16777/assises-de-la-telemedecine-la-feuille-de-route-2026-2028-de-stephanie-rist-entre-relance-et-garde-fous.html" target="_blank">Caducee.net — Feuille de route télémédecine 2026-2028</a></li>
+      <li><a href="https://sante.gouv.fr/soins-et-maladies/prises-en-charge-specialisees/telesante-pour-l-acces-de-tous-a-des-soins-a-distance/article/assises-de-la-telemedecine-2025-2026-un-nouvel-elan-pour-les-acteurs" target="_blank">Ministère de la Santé — Assises de la télémédecine 2025-2026</a></li>
+      <li><a href="https://www.cnil.fr/fr/numerique-en-sante-la-cnil-et-la-has-sengagent" target="_blank">CNIL — Partenariat CNIL-HAS numérique en santé (mars 2026)</a></li>
+      <li><a href="https://www.info.gouv.fr/communique/le-gouvernement-prolonge-en-2026-la-grande-cause-nationale-dediee-a-la-sante-mentale" target="_blank">info.gouv.fr — Santé mentale Grande Cause Nationale 2026</a></li>
+      <li><a href="https://esante.gouv.fr/actualites/publication-de-la-doctrine-du-numerique-en-sante-2026" target="_blank">ANS — Doctrine du numérique en santé 2026</a></li>
+      <li><a href="https://www.lassuranceenmouvement.com/2026/03/31/la-teleconsultation-seloigne-des-idees-recues" target="_blank">L'Assurance en Mouvement — La téléconsultation s'éloigne des idées reçues (31 mars 2026)</a></li>
+      <li><a href="https://www.ey.com/fr_fr/newsroom/2026/02/panorama-france-healthtech-2026" target="_blank">EY France — Panorama France HealthTech 2026</a></li>
+      <li><a href="https://www.caducee.net/actualite-medicale/16782/teleconsultation-2025-la-sante-mentale-tire-l-activite-l-etat-affine-la-feuille-de-route-2026-2028.html" target="_blank">Caducee.net — Téléconsultation 2025 : la santé mentale tire l'activité</a></li>
+      <li><a href="https://www.lasemainedespyrenees.fr/bagneres-de-bigorre-le-centre-hospitalier-passe-a-doctolib-pour-faciliter-lacces-aux-soins/" target="_blank">La Semaine des Pyrénées — CH Bagnères-de-Bigorre passe à Doctolib</a></li>
+      <li><a href="https://www.assurance-maladie.ameli.fr/presse/2025-12-22-cp-convention-medicale-ce-qui-change-en-2026" target="_blank">Assurance Maladie — Ce qui change en 2026 pour les assurés et médecins</a></li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Généré automatiquement par l'agent de veille Hellocare — 2 avril 2026
+  </div>
+
+</div>
+</body>
+</html>
